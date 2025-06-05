@@ -1,0 +1,22 @@
+<h3>Contacto</h3>
+
+<p>Si desea contactarse con nosotros, por favor complete el siguiente formulario:</p>
+
+<form action="https://formsubmit.co/sm1960it@macroinstalaciones.com" method="POST">
+    <table>
+        <td>
+            <p><input type="text" id="nombre" name="nombre" placeholder="Nombre *" required /></p>
+            <p><input type="email" id="email" name="email" placeholder="eMail *" required /></p>
+            <p><input type="tel" id="telefono" name="telefono" placeholder="Teléfono *" required /></p>
+            <p><input type="text" id="empresa" name="empresa" placeholder="Empresa *" required /></p>
+        </td>
+        <td>
+            <p><input type="text" id="asunto" name="asunto" placeholder="Asunto *" required /></p>
+            <p><textarea id="mensaje" name="mensaje" rows="6" cols="50" placeholder="Ingrese su mensaje *" required></textarea></p>
+            <p><button type="submit">Enviar</button></p>
+        </td>
+    </table>
+    <p>* Campos obligatorios</p>
+    <input type="hidden" name="_next" value="http://localhost:4200">
+    <input type="hidden" name="_captcha" value="false">
+</form>

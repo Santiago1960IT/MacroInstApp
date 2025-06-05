@@ -1,0 +1,9 @@
+.nosotros-bckgrnd {
+    width: 100%;
+    height: 400px;
+    background-image: url('/assets/FondoNosotros.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    opacity: 0.60;
+}

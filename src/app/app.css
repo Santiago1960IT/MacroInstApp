@@ -1,0 +1,19 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto; /* Fila para el encabezado, contenido principal y pie de página */
+    height: 100vh;
+}
+
+.header {
+    grid-row: 1;
+}
+
+.main {
+    grid-row: 2;
+    overflow: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
+}
+
+.footer {
+    grid-row: 3;
+}

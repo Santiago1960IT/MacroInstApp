@@ -1,0 +1,35 @@
+<div class="GradienteHorizontal">
+</div>
+
+<nav>
+  <ul>
+    <li (click)="onMenuSelect('nosotros')"><b>NOSOTROS</b></li>
+    <li (click)="onMenuSelect('servicios')"><b>SERVICIOS</b></li>
+    <li (click)="onMenuSelect('obras')"><b>OBRAS</b></li>
+    <li (click)="onMenuSelect('clientes')"><b>CLIENTES</b></li>
+    <li (click)="onMenuSelect('contacto')"><b>CONTACTO</b></li>
+  </ul>
+</nav>
+
+<div *ngIf="selectedComponent === 'nosotros'">
+  <app-nosotros></app-nosotros>
+</div>
+
+<div *ngIf="selectedComponent === 'servicios'">
+  <app-servicios></app-servicios>
+</div>
+
+<div *ngIf="selectedComponent === 'obras'">
+  <app-obras></app-obras>
+</div>
+
+<div *ngIf="selectedComponent === 'clientes'">
+  <app-clientes></app-clientes>
+</div>
+
+<div *ngIf="selectedComponent === 'contacto'">
+  <app-contacto></app-contacto>
+</div>
+
+
+<!--[ngClass]="selectedComponent === 'nosotros'?'selected':''" -->
