@@ -1,19 +1,25 @@
-.grid-container {
+.GridContainer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto; /* Fila para el encabezado, contenido principal y pie de página */
     height: 100vh;
 }
 
-.header {
+.Header {
     grid-row: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
 }
 
-.main {
+.Main {
     grid-row: 2;
     overflow: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
 }
 
-.footer {
+.Footer {
     grid-row: 3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
 }

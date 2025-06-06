@@ -1,9 +1,27 @@
-.nosotros-bckgrnd {
+.NosotrosBackground {
     width: 100%;
     height: 400px;
     background-image: url('/assets/FondoNosotros.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom left;
-    opacity: 0.60;
 }
+
+.NosotrosTabla {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    table-layout: fixed;
+    width: 60%;
+    border-collapse: collapse;
+}
+
+.NosotrosTabla td {
+    vertical-align: top;
+}
+
+.TituloSeccion {
+    color: black;
+    font-size: 1.75em;
+}
+
