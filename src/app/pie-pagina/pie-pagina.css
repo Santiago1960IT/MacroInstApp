@@ -10,7 +10,7 @@
     background-image: linear-gradient(to right, black, whitesmoke, black);
 }
 
-.FooterTable {
+.PieDePaginaTabla {
     margin-left: auto;
     margin-right: auto;
     padding-top: 15px;
@@ -19,7 +19,7 @@
     border-collapse: collapse;
 }
 
-.FooterTable td {
+.PieDePaginaTabla td {
     width: calc(100%/5);
     font-size: .875em;
     text-align: center;

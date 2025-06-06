@@ -1,0 +1,12 @@
+p {
+    margin: 10px 10%;
+}
+
+.ServiciosTabla {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    table-layout: fixed;
+    width: 80%;
+    border-collapse: collapse;
+}

@@ -3,11 +3,11 @@
 
 <nav>
   <ul>
-    <li (click)="onMenuSelect('nosotros')"><b>NOSOTROS</b></li>
-    <li (click)="onMenuSelect('servicios')"><b>SERVICIOS</b></li>
-    <li (click)="onMenuSelect('obras')"><b>OBRAS</b></li>
-    <li (click)="onMenuSelect('clientes')"><b>CLIENTES</b></li>
-    <li (click)="onMenuSelect('contacto')"><b>CONTACTO</b></li>
+    <li (click)="onMenuSelect('nosotros')" [ngClass]="selectedComponent === 'nosotros'?'OpcionActiva':''"><b>NOSOTROS</b></li>
+    <li (click)="onMenuSelect('servicios')" [ngClass]="selectedComponent === 'servicios'?'OpcionActiva':''"><b>SERVICIOS</b></li>
+    <li (click)="onMenuSelect('obras')" [ngClass]="selectedComponent === 'obras'?'OpcionActiva':''"><b>OBRAS</b></li>
+    <li (click)="onMenuSelect('clientes')" [ngClass]="selectedComponent === 'clientes'?'OpcionActiva':''"><b>CLIENTES</b></li>
+    <li (click)="onMenuSelect('contacto')" [ngClass]="selectedComponent === 'contacto'?'OpcionActiva':''"><b>CONTACTO</b></li>
   </ul>
 </nav>
 
@@ -30,6 +30,3 @@
 <div *ngIf="selectedComponent === 'contacto'">
   <app-contacto></app-contacto>
 </div>
-
-
-<!--[ngClass]="selectedComponent === 'nosotros'?'selected':''" -->
