@@ -1,22 +1,39 @@
-<h3>Contacto</h3>
-
+<p style="font-size: 1.75em"><b>Contacto</b></p>
 <p>Si desea contactarse con nosotros, por favor complete el siguiente formulario:</p>
 
 <form action="https://formsubmit.co/sm1960it@macroinstalaciones.com" method="POST">
-    <table>
-        <td>
-            <p><input type="text" id="nombre" name="nombre" placeholder="Nombre *" required /></p>
-            <p><input type="email" id="email" name="email" placeholder="eMail *" required /></p>
-            <p><input type="tel" id="telefono" name="telefono" placeholder="Teléfono *" required /></p>
-            <p><input type="text" id="empresa" name="empresa" placeholder="Empresa *" required /></p>
-        </td>
-        <td>
-            <p><input type="text" id="asunto" name="asunto" placeholder="Asunto *" required /></p>
-            <p><textarea id="mensaje" name="mensaje" rows="6" cols="50" placeholder="Ingrese su mensaje *" required></textarea></p>
-            <p><button type="submit">Enviar</button></p>
-        </td>
-    </table>
-    <p>* Campos obligatorios</p>
+    <div class="ContactoTabla">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-2">
+                    <input class="form-control" type="text" id="nombre" name="Nombre" placeholder="Nombre *" style="background-color:rgb(235, 235, 235);" required>
+                </div>
+                <div class="mb-2">
+                    <input class="form-control" type="email" id="email" name="eMail" placeholder="eMail *" style="background-color:rgb(235, 235, 235);" required>
+                </div>
+                <div class="mb-2">
+                    <input class="form-control" type="tel" id="telefono" name="Teléfono" placeholder="Teléfono *" style="background-color:rgb(235, 235, 235);" required>
+                </div>
+                <div class="mb-2">
+                    <input class="form-control" type="text" id="empresa" name="Empresa" placeholder="Empresa *" style="background-color:rgb(235, 235, 235);" required>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="mb-2">
+                    <input class="form-control" type="text" id="asunto" name="Asunto" placeholder="Asunto *" style="background-color:rgb(235, 235, 235);" required>
+                </div>
+                <div class="mb-2">
+                    <textarea class="form-control" id="mensaje" name="Mensaje" rows="5" cols="50" placeholder="Ingrese su mensaje *" style="background-color:rgb(235, 235, 235);" required></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="hstack gap-3">
+            <button type="submit" class="btn btn-outline-secondary">Enviar</button>
+            <div class="vr"></div>
+            <button type="reset" class="btn btn-outline-secondary">Reset</button>
+        </div>
+    </div>
+    <p style="font-size: 0.875em;"><i>* Campos obligatorios</i></p>
     <input type="hidden" name="_next" value="http://localhost:4200">
     <input type="hidden" name="_captcha" value="false">
 </form>

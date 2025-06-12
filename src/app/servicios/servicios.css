@@ -1,12 +1,33 @@
 p {
-    margin: 10px 10%;
+    margin: 20px 10%;
 }
 
 .ServiciosTabla {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 15px;
-    table-layout: fixed;
     width: 80%;
     border-collapse: collapse;
+}
+
+.ServCeldaTitulo {
+    vertical-align: top;
+    font-size: 1.75em;
+    height: 60px;
+}
+
+.ServCeldaTexto {
+    width: calc(100%*0.25);
+    vertical-align: top;
+    color: black;
+}
+
+.ServCeldaImagen {
+    width: calc(100%*0.5);
+    vertical-align: top;
+}
+
+.ServImagen {
+    max-width: 800px;
+    max-height: 440px;
+    object-fit: cover;
 }
